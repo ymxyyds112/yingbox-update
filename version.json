@@ -1,0 +1,12 @@
+{
+  "versionCode": 20407,
+  "versionName": "2.4.7",
+  "notes": "1. 两行任务栏改造为正交模式：第一行=「怎么看」（主页/默认/最新/人气/评分），第二行=「看什么」（片源全部原生分类，完整不去重）
+2. 组合生效：第二行选「电影」+ 第一行选「评分」= 电影榜单；选「动漫」+「人气」= 热播动漫
+3. 排序真实生效：优先用片源自带的排序筛选维度，没有则退化成通用 by=time/hits/score
+4. 视角会跟着走：切分类沿用当前视角；改视角原地刷新当前分类，不跳回主页
+5. 兜底：片源没有分类树时自动退化为固定分类列表，保证仍有内容",
+  "apkUrl": "https://ghfast.top/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
+  "minVersionCode": 1,
+  "publishedAt": "2026-10-24"
+}
