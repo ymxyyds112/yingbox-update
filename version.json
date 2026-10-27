@@ -1,8 +1,8 @@
 {
-  "versionCode": 20416,
-  "versionName": "2.4.16",
-  "notes": "1. 回退 v2.4.14 的自动安装改造：Android 不允许第三方应用跳过系统安装确认，静默/root/无障碍三条路线在当前设备上一律走不通，反而引入风险。已全部移除\n2. 恢复「在线检查 → 下载 → 手动确认安装覆盖」流程：下载完成自动调起系统安装器，点一次「安装」即覆盖升级\n3. 保留数据安全校验：下载前预检安装权限；下载后校验包名 + 签名一致 + 防降级，校验不通过一律阻止安装\n4. 覆盖安装不丢数据：观影记录、收藏、设置、登录状态全部保留，无需卸载",
+  "versionCode": 20417,
+  "versionName": "2.4.17",
+  "notes": "1. 取消首页站源锁定：HOME_SOURCE_LOCKED 置为 false，首页左上角/播放器/设置页的全部换源入口恢复可用，启动不再强制锁定到奶酪秒播\n2. 切换源后会记忆用户选择（HOME_API），下次启动沿用，不再被强制覆盖\n3. 其余能力不变：年份筛选、在线检查+手动覆盖安装、设置密码 8023、倒计时退出等均保留",
   "apkUrl": "https://ghfast.top/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-10-26"
+  "publishedAt": "2026-10-27"
 }
