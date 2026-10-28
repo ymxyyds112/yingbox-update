@@ -1,7 +1,7 @@
 {
-  "versionCode": 20419,
-  "versionName": "2.4.19",
-  "notes": "批次二（稳定性加固：消除三大入口闪退）\n1. 修复直播页崩溃：EPG 日期栏未选中时 selectedIndex 为 -1，旧代码用 Objects.requireNonNull 包 getItem(-1)，抛 IndexOutOfBoundsException 导致进入直播即崩。已统一改为安全取值\n2. 修复详情页崩溃：切源/换线路后 playFlag 与剧集表 key 对不上，取值为 null 却直接 .size()（其中两处还用 requireNonNull 主动抛 NPE），焦点一落到剧集行就闪退。已改为统一的安全取值\n3. 修复详情页切集越界：播放器回传的集数可能超出当前列表长度，以前直接 IndexOutOfBoundsException\n4. 修复 Fragment 初始化崩溃：Activity 的 init() 有异常保护，Fragment 的 init() 却是裸调用，任一异常会沿 FragmentTransaction 穿透把首页带走。现已同样接入异常保护\n5. 修复首页崩溃：播放页 EventBus 注销不与注册配对（Fragment 从未可见就被移除时），抛未注册异常。已加注册标记\n6. 修复设置页崩溃：壁纸下载要几秒，期间退出设置页后回调里 requireActivity() 抛异常。已改为安全的 Activity 判断\n7. 修复广播崩溃：收到缺少 action 字段的广播时 NPE，Receiver 主线程异常会直接打崩进程\n8. 修复播放页内存泄漏：20 秒的解析超时消息未被移除，退出播放后仍在主线程队列，已一并清理",
+  "versionCode": 20420,
+  "versionName": "2.4.20",
+  "notes": "批次三（内存与流畅度）\n1. 消除最大 OOM 源：占位图缓存以前用完整影片名做 key 且永不淘汰，浏览一部新片就多一张常驻图片（单张 0.3-0.7MB），连续看几百部就是上百MB不释放。现改为按字节淘汰的 LruCache（上限8MB），且 key 只用首字，缓存条目从「影片数」降到几十个\n2. 修复直播页整体泄漏：静态变量持有 Activity 自身（onDestroy 也不清空），退出直播后整个页面连同播放器、全部列表视图都回收不掉。已改为不持有 Activity\n3. 修复直播无限动画泄漏：旋转动画设为无限循环且从不取消，退出后仍在后台逐帧占用 CPU/GPU。已在销毁时取消\n4. 清理直播残留：静态节目单缓存按「频道×日期」无限累积且跨次重建叠加；各类延时任务与倒计时以前也只逐个移除、容易漏\n5. 新增内存压力自救：系统内存不足时自动分级释放图片缓存，避免直接被系统杀进程\n6. 修复历史纪录页卡顿：以前一次性捞出整张表并每条新建一个 Gson（构造开销极大），上千条时主线程卡数秒。现改为 Gson 单例复用 + 按需限量查询",
   "apkUrl": "https://ghfast.top/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-10-29"
