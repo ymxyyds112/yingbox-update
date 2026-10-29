@@ -1,8 +1,8 @@
 {
-  "versionCode": 20422,
-  "versionName": "2.4.22",
-  "notes": "1. 修复鸿蒙7.0/华为平板/折叠屏展开态上内容被放大、边缘被截断：海报列数不再按屏幕最短宽度分档（该分档会随系统「显示大小」跳档，导致卡片宽度超出格子约40%而互相重叠挤压），恢复为稳定的5列/6列\\n2. 屏幕适配改用界面实际可用尺寸为基准，不再依赖系统报告的屏幕尺寸，避免自由窗口、平行视界、二合一笔记本窗口模式下算出错误密度\\n3. 屏蔽系统字体缩放对布局的影响\\n4. 补齐大屏声明与配置变化时的重新适配（折叠屏展开、分屏、旋转不再残留旧密度）\\n5. 设置页新增「屏幕适配诊断」入口，可查看密度、屏幕尺寸、窗口尺寸、每格宽度等参数，便于精准定位适配问题",
-  "apkUrl": "https://ghfast.top/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
+  "versionCode": 20423,
+  "versionName": "2.4.23",
+  "notes": "1. 修复在线更新失败：加速镜像 ghfast.top 已整体不可用（502），导致检查更新和下载安装包全线失败\\n2. 内置多个加速镜像，检查更新与下载时会自动依次切换，任一镜像挂掉不再影响更新\\n3. 发版不再写死单一镜像地址，改用当前可用镜像\\n4. 若仍无法更新，可在升级源地址里换用 gh-proxy.com 或 ghproxy.net 前缀",
+  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-10-30"
 }
