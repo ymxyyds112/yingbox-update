@@ -1,6 +1,6 @@
 # 影视box 在线升级源
 
-- 当前版本：v2.4.22（versionCode 20422）
+- 当前版本：v2.4.23（versionCode 20423）
 - 更新时间：2026-10-30
 
 ## 电视端配置
@@ -8,7 +8,7 @@
 工具栏「在线升级」→ ⚙ 手动输入服务器地址 → 填：
 
 ```
-https://ghfast.top/https://raw.githubusercontent.com/ymxyyds112/yingbox-update/main
+https://gh-proxy.com/https://raw.githubusercontent.com/ymxyyds112/yingbox-update/main
 ```
 
 ## 文件说明
