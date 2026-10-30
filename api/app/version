@@ -1,8 +1,8 @@
 {
-  "versionCode": 20423,
-  "versionName": "2.4.23",
-  "notes": "1. 修复在线更新失败：加速镜像 ghfast.top 已整体不可用（502），导致检查更新和下载安装包全线失败\\n2. 内置多个加速镜像，检查更新与下载时会自动依次切换，任一镜像挂掉不再影响更新\\n3. 发版不再写死单一镜像地址，改用当前可用镜像\\n4. 若仍无法更新，可在升级源地址里换用 gh-proxy.com 或 ghproxy.net 前缀",
+  "versionCode": 20424,
+  "versionName": "2.4.24",
+  "notes": "1. 更换应用封面：全新设计「开箱光束」图标——开盖立方体射出彩光，在空中形成发光播放三角\\n2. 同步更新电视端横幅（16:9），电视桌面显示的就是新封面\\n3. 补齐高清横幅素材（640x360 / 960x540），高分屏电视上显示更清晰",
   "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-10-30"
+  "publishedAt": "2026-10-31"
 }
