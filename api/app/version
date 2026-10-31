@@ -1,8 +1,8 @@
 {
-  "versionCode": 20425,
-  "versionName": "2.4.25",
-  "notes": "1. 修复在线更新链路：默认服务器地址此前指向自建云机 175.178.99.118:3000（安全组封禁，实测 502 不可达），未手动配置地址的用户点「在线更新」永远连不上\\n2. 默认地址已改为 GitHub 升级源，新装或重置后可直接在线更新\\n3. 配合已内置的多镜像兜底，任一镜像不可用会自动切换\\n4. 若你手动填过 ghfast 开头的地址，建议改填 gh-proxy 前缀（该镜像已失效）",
+  "versionCode": 20426,
+  "versionName": "2.4.26",
+  "notes": "1. 更换应用封面：采用全新「薄荷绿胶片环」图标（白色播放键 + 薄荷绿胶片环 + 霓虹光晕）\\n2. 同步更新电视端横幅，电视桌面显示即为新封面\\n3. 补齐高清横幅素材，高分屏电视显示更清晰",
   "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-10-31"
+  "publishedAt": "2026-11-01"
 }
