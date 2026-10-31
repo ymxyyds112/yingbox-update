@@ -1,7 +1,7 @@
 {
-  "versionCode": 20426,
-  "versionName": "2.4.26",
-  "notes": "1. 更换应用封面：采用全新「薄荷绿胶片环」图标（白色播放键 + 薄荷绿胶片环 + 霓虹光晕）\\n2. 同步更新电视端横幅，电视桌面显示即为新封面\\n3. 补齐高清横幅素材，高分屏电视显示更清晰",
+  "versionCode": 20427,
+  "versionName": "2.4.27",
+  "notes": "1. 更换应用封面：全新「薄荷绿胶片环」图标（白色播放键 + 薄荷绿胶片环 + 霓虹光晕），电视端横幅同步更新\\n2. 优化启动速度：原来每次冷启动都要重新联网拉取片源配置（api.json），网络稍慢首页就一直转圈；现在配置在本地缓存 12 小时内直接读取，秒进首页，过期才自动联网刷新\\n3. 优化启动速度：播放器的原生解码库（十几 MB）和直播台标数据（102KB）原来在启动时同步加载，全部改为后台加载，不再阻塞界面出现\\n4. 搜索爬虫改为统一预热，首次搜索更快",
   "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-01"
