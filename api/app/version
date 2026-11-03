@@ -1,8 +1,8 @@
 {
-  "versionCode": 20432,
-  "versionName": "2.4.32",
-  "notes": "1. 修复电视上有声音没画面（黑屏）：电视端默认改用 SurfaceView 渲染，画面不再依赖 GPU 二次合成\n2. 新增播放自愈：检测到「已经出帧但没上屏」会自动切换渲染方式，仍不行再自动切 IJK 硬解，不需要手动操作\n3. 安装包改为 32/64 位通用，解决部分电视「解析包错误」根本装不上的问题\n4. 2GB 内存机型默认关闭详情页小窗预览，少占一路解码器，进全屏更稳\n5. 图片缓存按内存分档（上限 48MB），长时间浏览不再被系统回收\n6. 新增「屏幕适配诊断」：可查看 ABI、内存、4K 硬解能力、WebView 内核版本",
-  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
+  "versionCode": 20433,
+  "versionName": "2.4.33",
+  "notes": "1. 电视端与手机/平板端升级通道彻底分开：各自独立版本文件与安装包，不会再互相推错包\n2. 修复「播放时整机卡顿、所有操作滞后」：上一版黑屏自愈逻辑会在起播时被重置，导致反复重播、来回切换渲染，形成死循环\n3. 电视端默认改为 IJK 硬解 + SurfaceView 渲染（本次会强制纠正一次历史设置），这是电视上出画面最稳的组合\n4. 黑屏自愈更准：连视频尺寸都拿不到的情况也会判定为异常并自动回退，不再静默放弃\n5. 安装不再强制先去设置授权：直接拉起系统安装器，电视上少一次来回折腾\n6. EXO 音频改回硬解优先（原来强制走 FFmpeg 软解，白烧 CPU）；低配电视默认关闭弹幕",
+  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-tv-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-02"
+  "publishedAt": "2026-11-03"
 }
