@@ -1,0 +1,8 @@
+{
+  "versionCode": 20433,
+  "versionName": "2.4.33",
+  "notes": "【手机平板版】\n1. 电视端与手机/平板端升级通道彻底分开：各自独立版本文件与安装包，不会再互相推错包\n2. 修复「播放时整机卡顿、所有操作滞后」：上一版黑屏自愈逻辑会在起播时被重置，导致反复重播、来回切换渲染，形成死循环\n3. 电视端默认改为 IJK 硬解 + SurfaceView 渲染（本次会强制纠正一次历史设置），这是电视上出画面最稳的组合\n4. 黑屏自愈更准：连视频尺寸都拿不到的情况也会判定为异常并自动回退，不再静默放弃\n5. 安装不再强制先去设置授权：直接拉起系统安装器，电视上少一次来回折腾\n6. EXO 音频改回硬解优先（原来强制走 FFmpeg 软解，白烧 CPU）；低配电视默认关闭弹幕",
+  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-mobile-latest.apk",
+  "minVersionCode": 1,
+  "publishedAt": "2026-11-03"
+}
