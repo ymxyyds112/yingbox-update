@@ -1,7 +1,7 @@
 # 影视box 在线升级源
 
-- 当前版本：v2.4.32（versionCode 20432）
-- 更新时间：2026-11-02
+- 当前版本：v2.4.35（versionCode 20435）
+- 更新时间：2026-11-04
 
 ## 电视端配置
 
@@ -17,4 +17,4 @@ https://gh-proxy.com/https://raw.githubusercontent.com/ymxyyds112/yingbox-update
 |---|---|
 | `api/app/version` | App 实际请求的版本文件（`{服务器地址}/api/app/version`） |
 | `version.json` | 同上，备用入口 |
-| Release `latest` / `yingbox-latest.apk` | APK 本体（**通用包**：armeabi-v7a + arm64-v8a），固定 tag 保证下载链接不变 |
+| Release `latest` / `yingbox-latest.apk` | APK 本体，固定 tag 保证下载链接永久不变 |
