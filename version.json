@@ -1,8 +1,8 @@
 {
-  "versionCode": 20432,
-  "versionName": "2.4.32",
-  "notes": "1. 修复电视上有声音没画面（黑屏）：电视端默认改用 SurfaceView 渲染，画面不再依赖 GPU 二次合成\n2. 新增播放自愈：检测到「已经出帧但没上屏」会自动切换渲染方式，仍不行再自动切 IJK 硬解，不需要手动操作\n3. 安装包改为 32/64 位通用，解决部分电视「解析包错误」根本装不上的问题\n4. 2GB 内存机型默认关闭详情页小窗预览，少占一路解码器，进全屏更稳\n5. 图片缓存按内存分档（上限 48MB），长时间浏览不再被系统回收\n6. 新增「屏幕适配诊断」：可查看 ABI、内存、4K 硬解能力、WebView 内核版本",
+  "versionCode": 20435,
+  "versionName": "2.4.35",
+  "notes": "1. 内置 4 条配置线路（gh-proxy.org / gh-proxy.com / GitHub 直连 / ghproxy.net），主配置源失效时自动依次接管；设置页也能直接选到这 4 条\\n2. 配置源兜底加短超时：某条线路挂掉不再干等十几秒才换下一条\\n3. 在线升级提速：默认线路改为实测最快的 gh-proxy.org；检查结果 60 秒内复用，反复打开升级窗口不再重复联网；「已是最新」时最快响应后 800ms 即出结论\\n4. 首页数据源默认展示「🧀奶酪┃秒播」，但只是默认值、不锁定：在设置里换的源会被记住，下次启动按你选的走\\n5. 构建依赖增加国内镜像，避免 dl.google.com 偶发超时导致无法打包",
   "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-02"
+  "publishedAt": "2026-11-04"
 }
