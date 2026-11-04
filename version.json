@@ -1,7 +1,7 @@
 {
-  "versionCode": 20447,
-  "versionName": "2.4.47",
-  "notes": "1. 详情/播放页在「下载」后新增「投屏」按钮，顺序：全屏、下载、投屏、小窗、快速搜索…\\n2. 投屏复用全屏播放里的投屏逻辑（设备搜索、地址校验、失败提示完全一致）\\n3. 投屏按钮使用青色，与小窗（紫）、下载（红）等相邻按钮区分",
+  "versionCode": 20448,
+  "versionName": "2.4.48",
+  "notes": "1. 主页筛选改为按数据源自动匹配：只展示片源自己声明的筛选维度，取消内置固定方案（不再强行换成「仅年份」）\\n2. 片源未提供筛选时不再弹空框，筛选图标自动隐藏\\n3. 聚合分类不再硬挂内置「分类/年代」维度",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-05"
