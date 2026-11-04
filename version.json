@@ -1,7 +1,7 @@
 {
-  "versionCode": 20446,
-  "versionName": "2.4.46",
-  "notes": "1. 检查更新只弹出一个窗口（发现新版本），不再叠着服务器设置弹窗\\n2. 更新内容改为简要展示（最多 4 行）\\n3. 小窗按钮改为紫色，避免与「下载/收藏」撞色\\n4. 小窗失败时给出明确原因（分屏/平行视界、系统未开启画中画）",
+  "versionCode": 20447,
+  "versionName": "2.4.47",
+  "notes": "1. 详情/播放页在「下载」后新增「投屏」按钮，顺序：全屏、下载、投屏、小窗、快速搜索…\\n2. 投屏复用全屏播放里的投屏逻辑（设备搜索、地址校验、失败提示完全一致）\\n3. 投屏按钮使用青色，与小窗（紫）、下载（红）等相邻按钮区分",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-05"
