@@ -8,7 +8,7 @@
 工具栏「在线升级」→ ⚙ 手动输入服务器地址 → 填：
 
 ```
-https://gh-proxy.com/https://raw.githubusercontent.com/ymxyyds112/yingbox-update/main
+https://gh-proxy.org/https://raw.githubusercontent.com/ymxyyds112/yingbox-update/main
 ```
 
 ## 文件说明
