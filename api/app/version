@@ -1,8 +1,8 @@
 {
-  "versionCode": 20437,
-  "versionName": "2.4.37",
-  "notes": "1. 新增「系统内核」：直接调用电视厂商自己的 MediaPlayer 解码通路，电视端已设为默认，这是电视上出画面概率最高的一条路\n2. 修复 SurfaceView 强制 RGBA_8888 的问题：它会让画面走 GPU 合成，而电视硬件视频层只吃解码器原生格式，结果就是有声音没画面\n3. 重写 IJK 硬解档位：关掉 mediacodec-handle-resolution-change（黑屏元凶），补齐 H.264/HEVC/MPEG4/MPEG2，新增「硬解码-同步」档绕开异步输出通路\n4. 去掉 max-fps=30 的强制丢帧，50/60fps 片源不再一顿一顿\n5. 修复三处会把「系统播放器」强行改回 EXO 的旧逻辑（设置存不住、看门狗白切、直播同样被改）\n6. 播放自愈扩到 5 级：换渲染 → 换内核 → 同步硬解 → 软解 → 换线路；播放诊断新增首帧/自愈次数",
-  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-tv-latest.apk",
+  "versionCode": 20435,
+  "versionName": "2.4.35",
+  "notes": "1. 内置 4 条配置线路（gh-proxy.org / gh-proxy.com / GitHub 直连 / ghproxy.net），主配置源失效时自动依次接管；设置页也能直接选到这 4 条\\n2. 配置源兜底加短超时：某条线路挂掉不再干等十几秒才换下一条\\n3. 在线升级提速：默认线路改为实测最快的 gh-proxy.org；检查结果 60 秒内复用，反复打开升级窗口不再重复联网；「已是最新」时最快响应后 800ms 即出结论\\n4. 首页数据源默认展示「🧀奶酪┃秒播」，但只是默认值、不锁定：在设置里换的源会被记住，下次启动按你选的走\\n5. 构建依赖增加国内镜像，避免 dl.google.com 偶发超时导致无法打包",
+  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-04"
 }
