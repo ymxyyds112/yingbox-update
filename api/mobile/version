@@ -1,8 +1,8 @@
 {
-  "versionCode": 20448,
-  "versionName": "2.4.48",
-  "notes": "1. 主页筛选改为按数据源自动匹配：只展示片源自己声明的筛选维度，取消内置固定方案（不再强行换成「仅年份」）\\n2. 片源未提供筛选时不再弹空框，筛选图标自动隐藏\\n3. 聚合分类不再硬挂内置「分类/年代」维度",
+  "versionCode": 20449,
+  "versionName": "2.4.49",
+  "notes": "1. 直播源重排：接入 iptv-org 中国频道表，替换已失效的 CCTV 线路\\n2. 新增线路健康探测：后台验证可用性，可用线路自动置顶、失效线路排后\\n3. 播放失败 1.2 秒快速换源并自动跳过失效线路，缓冲等待最长 8 秒\\n4. 探测结果缓存 6 小时，不增加启动耗时",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-05"
+  "publishedAt": "2026-11-08"
 }
