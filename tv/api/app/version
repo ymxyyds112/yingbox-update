@@ -1,8 +1,8 @@
 {
-  "versionCode": 20437,
-  "versionName": "2.4.37",
-  "notes": "【电视版】\n1. 新增「系统内核」：直接调用电视厂商自己的 MediaPlayer 解码通路，电视端已设为默认，这是电视上出画面概率最高的一条路\n2. 修复 SurfaceView 强制 RGBA_8888 的问题：它会让画面走 GPU 合成，而电视硬件视频层只吃解码器原生格式，结果就是有声音没画面\n3. 重写 IJK 硬解档位：关掉 mediacodec-handle-resolution-change（黑屏元凶），补齐 H.264/HEVC/MPEG4/MPEG2，新增「硬解码-同步」档绕开异步输出通路\n4. 去掉 max-fps=30 的强制丢帧，50/60fps 片源不再一顿一顿\n5. 修复三处会把「系统播放器」强行改回 EXO 的旧逻辑（设置存不住、看门狗白切、直播同样被改）\n6. 播放自愈扩到 5 级：换渲染 → 换内核 → 同步硬解 → 软解 → 换线路；播放诊断新增首帧/自愈次数",
+  "versionCode": 20438,
+  "versionName": "2.4.38",
+  "notes": "【电视版】\n【电视端专用通道加固版】\n1. 升级通道在打包时写死：电视包固定只读 tv 独立升级源，手机包固定只读 mobile 源，不再靠设备识别，彻底避免国产电视被误判成手机而拉错安装包\n2. 手填服务器地址若指向另一条通道会自动纠正回本端通道；自建服务器不受影响\n3. 发版脚本增加通道防呆：电视包必须含 armeabi-v7a、手机包不得含，两个通道禁止传同一个包；只发手机包时绝不触碰电视通道\n4. 保留被混淆器误删的通道常量类，确保上述规则在正式包里真实生效\n说明：播放内核与 2.4.37 完全一致（系统播放器 + SurfaceView + 5 级自愈），本版只修升级通道隔离，不影响观影体验",
   "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-tv-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-04"
+  "publishedAt": "2026-11-08"
 }
