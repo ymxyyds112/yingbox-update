@@ -1,8 +1,8 @@
 {
-  "versionCode": 20439,
-  "versionName": "2.4.39",
-  "notes": "【对齐影视仓播放通路 · 修复黑屏自愈从未触发】\n1. 拆包比对这台电视上能出画的影视仓TV6.2.9（libijkpro.so + assets/shaders/ + GlEnhanceRenderView），确认它走 SurfaceTexture→GPU 合成，不依赖电视硬件 overlay；本版把电视默认渲染从 SurfaceView 改回 TextureView，走同构的 GPU 合成通路\n2. 查实并修复真正的根因：播放器 start() 时就把状态置为 STATE_PLAYING，旧代码一看到它就撤销黑屏看门狗、并把「首帧出画」写成「是」——导致之前做的 5 级自动修复一次都没跑过，诊断结果也是假的\n3. 首帧判定改为只认 MEDIA_INFO_VIDEO_RENDERING_START(3)，并给 EXO 内核补上 onRenderedFirstFrame 转发，三个内核都有真实出画信号\n4. 自愈顺序重排：先换解码内核 → IJK 同步硬解 → 软解 → 最后才换渲染视图 → 换线路，避免一上来就切回更容易黑屏的 SurfaceView\n5. 起播时显示版本 + 内核 + 渲染一次，方便确认电视上装的是不是新包\n说明：影视仓的闭源 libijkpro.so / media3 不复制（授权与接口均不兼容），本版复刻的是它「GPU 合成上屏 + 解码通路轮换」的机制；升级通道仍为电视端独立 tv 源",
-  "apkUrl": "https://gh-proxy.com/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-tv-latest.apk",
+  "versionCode": 20449,
+  "versionName": "2.4.49",
+  "notes": "1. 直播源重排：接入 iptv-org 中国频道表，替换已失效的 CCTV 线路\\n2. 新增线路健康探测：后台验证可用性，可用线路自动置顶、失效线路排后\\n3. 播放失败 1.2 秒快速换源并自动跳过失效线路，缓冲等待最长 8 秒\\n4. 探测结果缓存 6 小时，不增加启动耗时",
+  "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-08"
+  "publishedAt": "2026-11-07"
 }
