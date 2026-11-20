@@ -1,8 +1,8 @@
 {
-  "versionCode": 20449,
-  "versionName": "2.4.49",
-  "notes": "1. 直播源重排：接入 iptv-org 中国频道表，替换已失效的 CCTV 线路\\n2. 新增线路健康探测：后台验证可用性，可用线路自动置顶、失效线路排后\\n3. 播放失败 1.2 秒快速换源并自动跳过失效线路，缓冲等待最长 8 秒\\n4. 探测结果缓存 6 小时，不增加启动耗时",
+  "versionCode": 20450,
+  "versionName": "2.4.50",
+  "notes": "1. 首装秒开：内置片源配置与爬虫，装好后零联网即可进入首页，不再等待\\n2. 备用源并发竞速：多条线路同时探测，首个可用立即命中，最坏等待从约40秒降到8秒\\n3. 原配置源失效时自动切换备用源并保留历史，可一键切回",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
-  "publishedAt": "2026-11-08"
+  "publishedAt": "2026-11-21"
 }
