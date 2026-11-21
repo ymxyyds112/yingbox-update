@@ -1,7 +1,7 @@
 {
-  "versionCode": 20451,
-  "versionName": "2.4.51",
-  "notes": "1. 首页秒开：片源分类与推荐加磁盘缓存，冷启动先显示上次内容，不再空等联网\\n2. 首页联网超时从30秒压到10秒，片源卡顿时不再长时间转圈\\n3. 断网或片源失败时保留已显示内容，首页不再被清空变白",
+  "versionCode": 20452,
+  "versionName": "2.4.52",
+  "notes": "1. 瘦身：安装包从21.9MB降到19.3MB（省2.5MB/11.6%），安装更快更省空间\\n2. 剔除未使用的Chromium网络库与多余语言资源，播放/下载/秒开等功能全部保留\\n3. 功能零删减：应用图标、电视横幅、内置配置、全部播放器内核原样保留",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-21"
