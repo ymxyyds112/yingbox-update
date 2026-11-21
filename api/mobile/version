@@ -1,7 +1,7 @@
 {
-  "versionCode": 20450,
-  "versionName": "2.4.50",
-  "notes": "1. 首装秒开：内置片源配置与爬虫，装好后零联网即可进入首页，不再等待\\n2. 备用源并发竞速：多条线路同时探测，首个可用立即命中，最坏等待从约40秒降到8秒\\n3. 原配置源失效时自动切换备用源并保留历史，可一键切回",
+  "versionCode": 20451,
+  "versionName": "2.4.51",
+  "notes": "1. 首页秒开：片源分类与推荐加磁盘缓存，冷启动先显示上次内容，不再空等联网\\n2. 首页联网超时从30秒压到10秒，片源卡顿时不再长时间转圈\\n3. 断网或片源失败时保留已显示内容，首页不再被清空变白",
   "apkUrl": "https://gh-proxy.org/https://github.com/ymxyyds112/yingbox-update/releases/download/latest/yingbox-latest.apk",
   "minVersionCode": 1,
   "publishedAt": "2026-11-21"
